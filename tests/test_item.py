@@ -3,12 +3,16 @@ import pytest
 
 
 @pytest.fixture
+
+
 def class_fixture_1():
     item_test_1 = Item("Смартфон", 10000, 20)
     return item_test_1
 
 
 @pytest.fixture
+
+
 def class_fixture_2():
     item_test_2 = Item("Ноутбук", 20000, 5)
     return item_test_2

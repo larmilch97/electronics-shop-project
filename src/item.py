@@ -52,3 +52,10 @@ class Item:
     @staticmethod
     def string_to_number(value: str) -> int:
         return int(float(value))
+
+    def __add__(self, other):
+        temp = other.__class__.__name__  # имя другого класса (str)
+        if issubclass(other.__class__, self.__class__):
+            return self.quantity + other.quantity
+        else:
+            return print("Складывать нельзя")

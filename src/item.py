@@ -39,7 +39,7 @@ class Item:
 
     @name.setter
     def name(self, new_name: str) -> None:
-        self.__name = new_name[:10]
+        self.__name = new_name[:20]
 
     @classmethod
     def instantiate_from_csv(cls):
